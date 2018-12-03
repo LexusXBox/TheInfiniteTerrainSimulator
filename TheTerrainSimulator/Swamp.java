@@ -9,8 +9,8 @@ public class Swamp {
 	// A
 	public static int size = 254;
 	public static String[][] swampMap;
-	public int numberOfFeatures = 5;
-	public int view = 9;
+	public int numberOfFeatures = 100;
+	public int view = 32;
 	//	int small = size/2-view/2;
 	//	int large = size/2+view/2;
 	
@@ -52,8 +52,8 @@ public class Swamp {
 		int south = vYPos-view/2;
 		int east = vXPos+view/2;
 		int west = vXPos-view/2;
-		for (int i = south; i < north; i++) {
-			for (int j = west; j < east; j++) {
+		for (int i = west; i < east; i++) {
+			for (int j = south; j < north; j++) {
 				 System.out.print(swampMap[i][j]);
 			}
 			System.out.println();
