@@ -11,12 +11,12 @@ Working
 Create Swamp
 Create and Place Features
 Create and Place Player
-User input for commands
+User input for Commands
 
 Needs Work
 View Window doesn't work as it should
 
-Require
+To Do
 Text for each page
 Implement Magic Compass
 Make Ending
