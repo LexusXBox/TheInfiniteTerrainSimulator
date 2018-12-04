@@ -15,12 +15,20 @@ public class Main {
 		// String west = "west";
 		// String east = "east";
 
-		mySwamp.populateSwamp();
-		mySwamp.placeFeature();
+		mySwamp.populateSwamp(mySwamp);
 		myPlayer.placePlayer();
+		mySwamp.placeFeature(myPlayer);
+
 		mySwamp.printing(myPlayer.getPlayXPos(),myPlayer.getPlayYPos());
 
-		System.out.println("You are in a unpleasant place. its ...");
+		//System.out.println("You are in a unpleasant place. its ...");
+		for(String[] s:mySwamp.swampMap) {
+			for(String m:s) {
+				System.out.print(m);
+			}
+		}
+		System.out.println(mySwamp.swampMap);
+		
 		System.out.println("Enter your Command...");
 		Scanner s = new Scanner(System.in);
 
@@ -33,7 +41,6 @@ public class Main {
 			switch (command) {
 			case "n"://"north":
 				//printing myPlayer.getPlayXPos();
-				
 				myPlayer.North();
 				break;
 			case "s"://"south":
